@@ -1,0 +1,574 @@
+.details {
+    width: 1200px;
+    margin: 0 auto;
+
+    .top {
+        width: 1200px;
+        height: 40px;
+        margin: 10px 0;
+        text-align: left;
+
+        span {
+            line-height: 40px;
+            color: #666666;
+            font-size: 12px;
+        }
+    }
+
+    .main {
+        display: flex;
+        height: 498px;
+        border: 0.5px solid #cccccc;
+
+        .le {
+            display: flex;
+            width: 1000px;
+            background-color: white;
+
+            .fd {
+                box-sizing: border-box;
+                width: 410px;
+                height: 488px;
+                position: relative;
+
+                .md {
+                    width: 380px;
+                    height: 380px;
+                    margin: 15px auto;
+                    position: relative;
+                    //   background-color: yellow;
+                    background-size: 380px 380px;
+                    
+                    img {
+                        width: 380px;
+                        height: 380px;
+                    }
+
+                    .move {
+                        width: 237.5px;
+                        height: 237.5px;
+                        background-color: rgb(128, 184, 230);
+                        opacity: 0.5;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        // 防止放大镜闪烁
+                        pointer-events: none;
+                    }
+                }
+
+                .lg {
+                    width: 380px;
+                    height: 380px;
+                    position: absolute;
+                    top: 15px;
+                    left: 400px;
+                    overflow: hidden;
+                    // img {
+                    //     width: 608px;
+                    //     height:  608px;
+                    // }
+                    background-size: 608px 608px;
+                    background-position: 0 0;
+                    display: none;
+                }
+
+                &::before {
+                    content: "";
+                    display: table;
+                }
+
+                .bot {
+                    //   padding:10px ;
+                    height: 78px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .left {
+                        width: 15px;
+                        height: 30px;
+                        background: url(/img/details/zy.png) no-repeat;
+                    }
+
+                    .xm {
+                        width: 350px;
+                        height: 78px;
+                        overflow: hidden;
+                        margin: 0 10px;
+                        border: 0.5px solid #cccccc;
+                        ul {
+                           
+                            li {
+                                box-sizing: border-box;
+                                width: 87.5px;
+                                height: 78px;
+                                padding: 8px 10px;
+                                float: left;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .active {
+                                border: 1px solid red;
+                            }
+                            &::after{
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+                        }
+                    }
+
+
+                    .right {
+                        width: 15px;
+                        height: 30px;
+                        background: url(/img/details/zy.png) -15px 0 no-repeat;
+                    }
+                }
+            }
+
+            .xq {
+                width: 570px;
+                text-align: left;
+                margin-left: 15px;
+
+                h3 {
+                    color: #333333;
+                    font-size: 18px;
+                    margin-top: 15px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    color: #333333;
+                    font-size: 12px;
+                    margin-bottom: 12px;
+                }
+
+                .cont {
+                    border-top: 0.3px solid #cccccc;
+                    padding-top: 10px;
+                    margin-bottom: 20px;
+
+                    div {
+                        padding: 5px 0;
+
+                        &> :nth-child(1) {
+                            color: #666666;
+                            font-size: 12px;
+                            display: inline-block;
+                            width: 52px;
+                            font-family: "微软雅黑";
+                        }
+                    }
+
+                    &> :nth-child(1) {
+                        &> :nth-child(2) {
+                            color: #999999;
+                            font-size: 12px;
+                        }
+                    }
+
+                    &> :nth-child(2) {
+                        &> :nth-child(2) {
+                            color: #ff6a00;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &> :nth-child(3) {
+                        &> :nth-child(2) {
+                            color: #fa0;
+                            font-size: 12px;
+                            font-weight: 100;
+                        }
+                    }
+
+                    &> :nth-child(4) {
+                        .zj {
+                            color: #999999;
+                            font-size: 12px;
+
+                            span {
+                                color: #ff6a00;
+                            }
+                        }
+                    }
+                }
+
+                .ccun {
+                    // margin-top: 20px;
+                    display: flex;
+
+                    .butts {
+                        width: 420px;
+
+                        button {
+                            height: 32px;
+                            padding: 3px 9px;
+                            background-color: white;
+                            border: 0.5px solid #cccccc;
+                            font-size: 12px;
+                            border-radius: 4px;
+                            // 上 右 下 左
+                            margin: 0 8px 8px 0;
+                        }
+
+                        .active {
+                            border: 0.5px solid #ff6a00;
+                        }
+                    }
+
+                    span {
+                        width: 50px;
+                        margin-top: 10px;
+                        color: #999999;
+                        font-size: 12px;
+                    }
+                }
+
+                .js {
+                    margin-top: 10px;
+                    height: 34px;
+                    display: flex;
+                    align-items: center;
+
+                    pre {
+                        color: #666666;
+                        font-size: 12px;
+                        font-family: "微软雅黑";
+                        display: inline-block;
+                        width: 52px;
+                    }
+
+                    .count {
+                        display: flex;
+                        height: 32px;
+                        width: 126px;
+                        border: 0.5px solid #cccccc;
+
+                        .jia {
+                            width: 30px;
+                            height: 32px;
+                            background-color: rgb(238, 238, 238);
+                            text-align: center;
+                            line-height: 32px;
+                            border: 0;
+                            outline: 0;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .show {
+                            width: 66px;
+                            background-color: white;
+                            outline: none;
+                            border: 0;
+                            text-align: center;
+                        }
+
+                        .jian {
+                            width: 30px;
+                            height: 32px;
+                            background-color: rgb(238, 238, 238);
+                            text-align: center;
+                            line-height: 32px;
+                            border: 0;
+                            outline: 0;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    span {
+                        font-size: 12px;
+                        color: #999999;
+                        margin: 0 5px;
+                    }
+                }
+
+                .gm {
+                    width: 534px;
+                    height: 50px;
+                    margin-top: 10px;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+
+                        &> :nth-child(1),
+                        &> :nth-child(2) {
+                            button {
+                                border-radius: 3px;
+                                border: 1px solid #f70;
+                                color: #fff;
+                                background-color: #f70;
+                                font-size: 16px;
+                                // padding: 10px 20px 10px;
+                                padding: 0 20px 0;
+                                margin-right: 12px;
+                                height: 40px;
+                                line-height: 40px;
+
+                                &:hover {
+                                    background-color: orange;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        &> :nth-child(3) {
+                            div {
+                                height: 16px;
+                                line-height: 16px;
+                                border: 1px solid #c4c4c4;
+                                border-radius: 2px;
+                                font-size: 14px;
+                                color: #666;
+
+                                padding: 10px 20px 12px 20px;
+
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                    vertical-align: bottom;
+                                }
+
+                                margin-right: 12px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        &> :nth-child(4) {
+                            position: relative;
+
+                            &:hover {
+                                cursor: pointer;
+
+                                .ew {
+                                    display: block;
+                                }
+                            }
+
+                            .phone {
+                                font-size: 14px;
+                                padding: 10px 10px 10px 28px;
+                                height: 18px;
+                                line-height: 18px;
+                                border: 1px solid #c8c9cd;
+                                color: #666;
+                                vertical-align: middle;
+                                background: rgba(0, 0, 0, 0) url(/img/details/phone.png) no-repeat scroll -75px -54px;
+                            }
+
+                            .ew {
+                                display: none;
+                                width: 110px;
+                                height: 110px;
+                                background-color: white;
+                                position: absolute;
+                                top: -120px;
+                                border: 0.2px solid #cccccc;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                                .jian {
+                                    width: 10px;
+                                    height: 10px;
+                                    position: absolute;
+                                    top: 105px;
+                                    left: 50px;
+                                    transform: rotateZ(45deg);
+                                    background-color: white;
+                                    border-right: 0.2px solid #cccccc;
+                                    border-bottom: 0.2px solid #cccccc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ri {
+            width: 200px;
+            background-color: rgb(238, 238, 238);
+
+            h3 {
+                color: #999999;
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 10px;
+
+                span {
+                    margin-right: 30px;
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    vertical-align: middle;
+                }
+            }
+
+            ul {
+                width: 130px;
+                margin: 0 auto;
+
+                li {
+                    width: 130px;
+                    height: 130px;
+                    margin: 20px 0 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &> :nth-child(1) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .botton {
+        //   background-color: #cccccc;
+        margin-top: 16px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        .lee {
+            width: 968px;
+            border: 0.5px solid #cccccc;
+
+            .head {
+                ul {
+                    height: 48px;
+                    background-color: rgb(243, 243, 243);
+                    border-bottom: 0.5px solid #cccccc;
+                    display: flex;
+
+                    li {
+                        color: #666666;
+                        font-size: 12px;
+                        line-height: 48px;
+                        width: 48px;
+                        height: 48px;
+                        padding: 0 35px;
+                    }
+
+                    &> :nth-child(1) {
+                        background-color: white;
+                        border-bottom: 0.5px solid white;
+                    }
+
+                    &> :nth-child(2) {
+                        width: 70px;
+                        border-left: 0.5px solid #cccccc;
+                        border-right: 0.5px solid #cccccc;
+
+                        span {
+                            color: #ff6a00;
+                        }
+                    }
+                }
+            }
+
+            .xia {
+                padding: 20px;
+
+                .ttp {
+                    height: 34px;
+                    margin-bottom: 34px;
+                    display: flex;
+                    border: 0.5px solid #cccccc;
+
+                    .name {
+                        width: 185px;
+                        background-color: rgb(243, 243, 243);
+                        border-right: 0.5px solid #cccccc;
+                        text-align: right;
+                        color: #333333;
+                        font-size: 14px;
+                        line-height: 34px;
+                        font-weight: bold;
+                    }
+
+                    .title {
+                        padding-left: 10px;
+                        font-size: 14px;
+                        line-height: 34px;
+                    }
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .rii {
+            width: 214px;
+            border: 0.5px solid #cccccc;
+            height: 1055px;
+
+            div.hh {
+                color: #666666;
+                font-size: 12px;
+                line-height: 48px;
+                height: 48px;
+                padding: 0 35px;
+                background-color: rgb(243, 243, 243);
+            }
+
+            .rm {
+                padding: 10px;
+
+                ul {
+                    li {
+                        width: 100%;
+                        margin-bottom: 10px;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        p {
+                            text-align: left;
+                        }
+
+                        &>:nth-child(2) {
+                            color: #666666;
+                            font-size: 12px;
+                        }
+
+                        &>:nth-child(3) {
+                            color: #ff6a00;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

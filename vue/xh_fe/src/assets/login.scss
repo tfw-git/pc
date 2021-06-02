@@ -1,0 +1,92 @@
+.login {
+    .zt {
+        display: flex;
+
+        li {
+            width: 50%;
+            height: 57px;
+            position: relative;
+            border-bottom: 0.5px solid #cccccc;
+
+            img {
+                vertical-align: middle;
+                margin-top: -8px;
+                margin-right: 2px;
+
+            }
+
+            span {
+                color: #8a8a8a;
+                line-height: 57px;
+                font-size: 18px;
+            }
+        }
+
+        &>:nth-child(1) {
+            border-right: 0.5px dashed #cccc;
+        }
+    }
+
+    .phone {
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+
+        span {
+            line-height: 200px;
+            font-size: 24px;
+            color: #333333;
+        }
+    }
+
+    .user {
+        width: 600px;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        input {
+            border: 1px solid #ccc;
+            height: 40px;
+            width: 386px;
+            line-height: 40px;
+            padding: 0px 6px;
+            outline: none;
+
+        }
+
+        .err {
+            width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 12px;
+            color: red;
+            height: 24px;
+            line-height: 24px;
+            // display: none;
+        }
+
+        .btns {
+            width: 400px;
+            margin: 0 auto;
+
+            button {
+                height: 40px;
+                width: 190px;
+                background-color: #ff6a00;
+                outline: none;
+                border: 1px solid #fa0;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                &:hover {
+                    background-color: orange;
+                }
+            }
+
+            &>:nth-child(1) {
+                margin-right: 20px;
+            }
+
+        }
+    }
+}

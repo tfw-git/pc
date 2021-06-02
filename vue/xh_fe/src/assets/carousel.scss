@@ -1,0 +1,74 @@
+#banner {
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    height: 444px;
+}
+
+#ul-imgs>li {
+    height: 444px;
+}
+
+#ul-imgs img {
+    height: 444px;
+}
+
+#ul-imgs {
+    display: flex;
+}
+
+/* 移动过渡动画 */
+#ul-imgs.transition {
+    transition: all 0.6s linear;
+}
+
+#ul-idxs>li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#ul-idxs {
+    width: 40px;
+    margin: 0 auto;
+    list-style: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+}
+
+#ul-idxs>li.active {
+    background-color: #ff6a00;
+}
+
+#btn-left,
+#btn-right {
+    width: 60px;
+    height: 444px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 10px 17.5px;
+}
+
+#btn-left {
+    left: 20px;
+    background-image: url(/img/carousel/left_ar.png);
+    background-size: 10px 17.5px;
+}
+
+#btn-right {
+    right: 20px;
+    background-image: url(/img/carousel/right_ar.png);
+}
+
+#btn-left:hover,
+#btn-right:hover {
+    background-size: 20px 35px;
+}

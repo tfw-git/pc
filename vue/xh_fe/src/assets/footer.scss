@@ -1,0 +1,170 @@
+/* 页尾上面 */
+.footer {
+    .top {
+        width: 100%;
+        height: 90px;
+        background-color: rgb(245, 245, 245);
+
+        ul {
+            display: flex;
+            width: 1200px;
+            height: 50px;
+            padding: 20px 0;
+            margin: 0 auto;
+
+            // background-color: red;
+            li {
+                display: flex;
+                width: 20%;
+
+                .img {
+                    margin: 0 29px;
+                    width: 48px;
+                    height: 48px;
+                    background-image: url("/img/index_img/footer.png");
+                    border-radius: 50%;
+                    background-position: 0 0;
+                    margin-right: 8px;
+                }
+
+                .main {
+                    p {
+                        text-align: left;
+                        font-size: 14px;
+                    }
+
+                    &>:nth-child(1) {
+                        color: #666666;
+                        font-weight: bold;
+                        margin-top: 6px;
+
+                        &:hover {
+                            color: rgb(255, 106, 0);
+                            cursor: pointer;
+                        }
+                    }
+
+                    &>:nth-child(2) {
+                        color: #545454
+                    }
+                }
+            }
+
+            &>:nth-child(2) {
+                .img {
+                    background-position: -48px 0;
+                }
+            }
+
+            &>:nth-child(3) {
+                .img {
+                    background-position: -96px 0;
+                }
+            }
+
+            &>:nth-child(4) {
+                .img {
+                    background-position: -144px 0;
+                }
+            }
+
+            &>:nth-child(5) {
+                .img {
+                    background-position: -191px 0;
+                }
+            }
+        }
+    }
+}
+
+/* 页尾 */
+.footer .bottom {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(58, 58, 58);
+}
+
+/* 防止外边距溢出 */
+.footer .bottom::before {
+    content: "";
+    display: table;
+}
+
+.footer .bottom>.one {
+    display: flex;
+    width: 1000px;
+    margin: 40px auto 20px;
+    /* background-color: red; */
+}
+
+.footer .bottom>.one>ul {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+}
+
+.footer.bottom>.one>ul> :nth-child(1)>a {
+    font-size: 16px;
+}
+
+.footer .bottom .one ul a {
+    color: #cccccc;
+    font-size: 12px;
+
+    &:hover {
+        color: rgb(255, 106, 0);
+        cursor: pointer;
+    }
+
+}
+
+.footer .bottom .one ul>li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.footer .bottom .one ul>li {
+    margin-bottom: 6px;
+}
+
+.footer .bottom .bq {
+    color: #cccccc;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.footer .bottom .bq>a {
+    color: #cccccc;
+}
+
+.footer .bottom .mz {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer .bottom .mz>li {
+    line-height: 35px;
+}
+
+.footer .bottom .mz>li>a {
+    font-size: 12px;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 0 20px;
+}
+
+.footer .bottom .mz> :last-child>a {
+    border: 0;
+}
+
+.footer .bottom .bot {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.footer .bottom .bot>a {
+    color: #cccccc;
+    padding-right: 15px;
+}
